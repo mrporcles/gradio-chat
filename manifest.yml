@@ -1,0 +1,9 @@
+applications:
+- name: gradio-chat
+  random-route: true
+  memory: 1G
+  buildpack: python_buildpack
+  env:
+    INPUT_MODEL: gemma2:2b
+  services:
+    - gemma2:2b
